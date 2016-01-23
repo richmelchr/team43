@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*-----CSS Reset-------*/
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, img, ins, kbd, q, s, samp, small, strike, strong, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td; {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	max-height: 999999px;
+}
+body {
+	line-height: 1;
+	height: 100%;
+	overflow-x: hidden;
+}
+ol, ul, li {
+	list-style: none; /* gets rid of the bullets next to links*/
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*----------------------------------------*/
+ul, li, body, h1, h2, h3, h4, h5, h6, div, p, c {
+	/* Normalizes margin, padding, font */
+	margin: 0;
+	padding: 0;
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+	font-weight: normal;/* text is normally bold without this */
+	font-size: 1em;
+	display: block;
+}
+/*---------------------------------------*/
+h1 {
+	color: #fff;
+}
+
+html {
+	/*sets the background and its position. this code is key to the parallax*/
+	background-position: 50% 1px;/*this line updated by the javascript for parallax*/
+	background-attachment: fixed;/*without this the background repeats*/
+	background-image: url(images/background4-inv.jpg);/*this is the background image link*/
+/*	background-image: url(images/trial2.png);/*this is the background image link*/
+	background-color: #12110F;
+	min-width: 960px;/*continues the nav and footer past renderd screen size*/
+	height: 100%;
+}
+
+body {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#center {
+	width: 800px;
+	margin: 0 auto;
+}
+.left {
+	float: left;
+}
+/*------------------------*/
+#buttons {
+	width: 160px;
+	height: 300px;
+	border: 1px solid red;
+}
+#buttons li {
+	float: left;
+	width: 150px;
+	border: 1px solid red;
+}
+
+button {
+	margin:0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right:10px;
+}
+#btn1-sel {
+	margin-left: 2px;
+	padding-top:10px;
+	padding-left:10px;
+}
+
+
+/*-------------------------*/
+#video-box {
+	width: 800px;
+	height: 300px;
+	position: relative;
+}
+
+#left-video {
+	width: 398px;
+	height: 298px;
+	color: #333;
+	float: left;
+	border: 1px solid red;
+}
+#right-video {
+	width: 398px;
+	height: 298px;
+	color: #999;
+	float: right;
+	border: 1px solid red;
+}
